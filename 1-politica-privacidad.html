@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Política de Privacidad — NidoApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --green-border: #bbf7d0;
+      --text: #1a1a1a;
+      --muted: #6b7280;
+      --bg: #f9f7f4;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 52px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.07);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .logo-icon {
+      width: 52px; height: 52px;
+      background: var(--green);
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px;
+      box-shadow: 0 4px 12px rgba(22,163,74,0.3);
+    }
+    .logo-text { font-size: 24px; font-weight: 700; color: var(--green); }
+    .logo-sub { font-size: 12px; color: var(--muted); margin-top: 1px; }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 32px;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .fecha { font-size: 13px; color: var(--muted); margin-bottom: 28px; }
+    .intro {
+      background: var(--green-light);
+      border: 1px solid var(--green-border);
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      font-size: 14px;
+      color: #15803d;
+      line-height: 1.6;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 36px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::before {
+      content: '';
+      display: block;
+      width: 4px; height: 18px;
+      background: var(--green);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    p { font-size: 15px; color: #374151; margin-bottom: 12px; }
+    ul { margin: 8px 0 14px 18px; }
+    li { font-size: 15px; color: #374151; margin-bottom: 8px; line-height: 1.6; }
+    li strong { color: var(--text); }
+    .contact-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 40px;
+    }
+    .contact-box .title { font-weight: 700; font-size: 15px; margin-bottom: 12px; }
+    .contact-item { font-size: 14px; color: #374151; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+    hr { border: none; border-top: 1px solid #f0f0f0; margin: 36px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-icon">🏠</div>
+      <div>
+        <div class="logo-text">NidoApp</div>
+        <div class="logo-sub">Gestión de guarderías</div>
+      </div>
+    </div>
+
+    <h1>Política de Privacidad</h1>
+    <p class="fecha">Última actualización: Mayo 2026</p>
+
+    <div class="intro">
+      Esta política describe cómo NidoApp recopila, usa y protege la información personal de los usuarios de la plataforma de gestión de guarderías y cuidos.
+    </div>
+
+    <h2>1. Información que recopilamos</h2>
+    <p>NidoApp recopila la siguiente información para operar correctamente:</p>
+    <ul>
+      <li><strong>Guardería:</strong> nombre del establecimiento, dirección, teléfono y correo electrónico del administrador.</li>
+      <li><strong>Cuidadores:</strong> nombre completo, teléfono y correo electrónico.</li>
+      <li><strong>Padres y tutores:</strong> nombre completo, teléfono, correo electrónico y relación con el menor (padre, madre, tutor/a).</li>
+      <li><strong>Niños:</strong> nombre, fecha de nacimiento, foto de perfil y registro de actividades diarias.</li>
+      <li><strong>Contenido generado:</strong> fotos de actividades, mensajes de chat entre padres y cuidadores, reportes diarios y registros de asistencia.</li>
+      <li><strong>Datos de uso:</strong> registros de acceso, tipo de dispositivo y versión de la aplicación.</li>
+    </ul>
+
+    <h2>2. Cómo usamos la información</h2>
+    <p>La información recopilada se utiliza exclusivamente para:</p>
+    <ul>
+      <li>Gestionar el funcionamiento diario de la guardería dentro de la plataforma.</li>
+      <li>Facilitar la comunicación entre padres y cuidadores.</li>
+      <li>Enviar notificaciones sobre actividades y eventos del niño.</li>
+      <li>Generar reportes diarios accesibles para los padres.</li>
+      <li>Mejorar la experiencia y el rendimiento de la aplicación.</li>
+    </ul>
+
+    <h2>3. Almacenamiento y seguridad</h2>
+    <p>Toda la información se almacena de forma segura en Supabase, plataforma con cifrado en tránsito (HTTPS/TLS) y en reposo. Las fotos y archivos multimedia se guardan en Supabase Storage con acceso restringido por guardería.</p>
+    <p>Cada guardería opera en un entorno aislado (multi-tenant). Los datos de una guardería no son accesibles por otras guarderías registradas en la plataforma.</p>
+
+    <h2>4. Compartición de datos</h2>
+    <p>NidoApp <strong>no vende ni comparte</strong> información personal con terceros con fines publicitarios o comerciales. Los datos únicamente se comparten con:</p>
+    <ul>
+      <li><strong>Supabase:</strong> proveedor de base de datos y almacenamiento.</li>
+      <li><strong>Firebase Cloud Messaging:</strong> para el envío de notificaciones push.</li>
+    </ul>
+
+    <h2>5. Datos de menores de edad</h2>
+    <p>NidoApp maneja información de niños menores de edad. Esta información es ingresada y gestionada exclusivamente por adultos autorizados: administradores, cuidadores y padres/tutores registrados. No recopilamos información de menores directamente.</p>
+    <p>El acceso a los datos de cada niño está limitado a los usuarios de la guardería correspondiente y a los padres vinculados a ese niño.</p>
+
+    <h2>6. Notificaciones push</h2>
+    <p>Con tu consentimiento, NidoApp puede enviarte notificaciones push sobre actividades de los niños. Puedes desactivarlas en cualquier momento desde la configuración de tu dispositivo.</p>
+
+    <h2>7. Retención de datos</h2>
+    <p>Los datos se conservan mientras la cuenta de la guardería esté activa. Al cancelar el servicio, los datos pueden ser eliminados previa solicitud al equipo de NidoApp.</p>
+
+    <h2>8. Tus derechos</h2>
+    <ul>
+      <li>Acceder a tu información personal almacenada.</li>
+      <li>Solicitar la corrección de datos incorrectos.</li>
+      <li>Solicitar la eliminación de tu cuenta y datos asociados.</li>
+      <li>Exportar la información de tu guardería.</li>
+    </ul>
+
+    <h2>9. Cambios a esta política</h2>
+    <p>Nos reservamos el derecho de actualizar esta política. Cualquier cambio significativo será notificado a través de la aplicación o por correo electrónico.</p>
+
+    <hr />
+
+    <div class="contact-box">
+      <div class="title">Contacto</div>
+      <p style="font-size:14px;color:#6b7280;margin-bottom:14px;">Para preguntas sobre esta política o solicitudes relacionadas con tus datos:</p>
+      <div class="contact-item">📧 soporte@nidoapp.com</div>
+      <div class="contact-item">🌐 nidoapp.com</div>
+      <div class="contact-item">📍 República Dominicana</div>
+    </div>
+  </div>
+</body>
+</html>
